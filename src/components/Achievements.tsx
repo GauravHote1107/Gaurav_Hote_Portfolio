@@ -1,6 +1,7 @@
 import { Trophy, Medal, Award, Star } from 'lucide-react';
 import IETE_NationalLevelProjectCompetition from '../assets/IETE_NationalLevelProjectCompetition.jpg';
 import SCIT_Graffiti2024_Winner from '../assets/SCIT_Graffiti2024_Winner.jpg';
+import SAFEHER_ResearchPaper_Published from '../assets/SAFEHER_ResearchPaper_Published.png';
 
 const achievements = [
   
@@ -38,6 +39,7 @@ const achievements = [
     description: '4 Research Papers Published (IEEE and Springer)',
     stat: 'Published Works',
     color: 'secondary',
+    image: SAFEHER_ResearchPaper_Published,
   },
 
 
@@ -65,7 +67,7 @@ export const Achievements = () => {
             <Icon className={`h-8 w-8 text-${achievement.color}`} />
           </div>
           <div className="flex-1 min-w-0">
-            <h3 className="text-xl font-orbitron font-bold mb-2 group-hover:text-primary transition-colors truncate">
+            <h3 className="text-xl font-orbitron font-bold mb-2 group-hover:text-primary transition-colors achievement-title">
               {achievement.title}
             </h3>
             <p className="text-foreground/80 mb-1 truncate">{achievement.description}</p>
