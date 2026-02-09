@@ -1,0 +1,40 @@
+### Node ###
+node_modules/
+
+### Build ###
+dist/
+.vite/
+build/
+out/
+
+### Vite / tooling ###
+.turbo/
+.parcel-cache/
+.next/
+.cache/
+
+### TypeScript ###
+*.tsbuildinfo
+
+### Environment ###
+.env
+.env.*.local
+
+### Logs ###
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+### Editor / OS ###
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+### Misc ###
+.eslintcache
+.pnp/
+.pnp.js
+coverage/
+/.history/

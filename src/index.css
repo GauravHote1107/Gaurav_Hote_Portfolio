@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Gaming Dark Theme - Cyberpunk Aesthetic */
+    --background: 240 44% 6%;
+    --foreground: 180 100% 90%;
+
+    --card: 240 38% 10%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 240 44% 8%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 186 100% 50%;
+    --primary-foreground: 240 44% 6%;
+
+    --secondary: 280 100% 56%;
+    --secondary-foreground: 240 44% 6%;
+
+    --muted: 240 38% 15%;
+    --muted-foreground: 180 20% 60%;
+
+    --accent: 330 100% 50%;
+    --accent-foreground: 240 44% 6%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 38% 18%;
+    --input: 240 38% 15%;
+    --ring: 186 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Gaming-specific tokens */
+    --cyber-green: 120 100% 50%;
+    --neon-pink: 330 100% 50%;
+    --electric-blue: 186 100% 50%;
+    --neon-purple: 280 100% 56%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(186 100% 50%), hsl(280 100% 56%));
+    --gradient-secondary: linear-gradient(135deg, hsl(330 100% 50%), hsl(280 100% 56%));
+    --gradient-accent: linear-gradient(135deg, hsl(120 100% 50%), hsl(186 100% 50%));
+    
+    /* Glows */
+    --glow-primary: 0 0 20px hsl(186 100% 50% / 0.5);
+    --glow-secondary: 0 0 20px hsl(280 100% 56% / 0.5);
+    --glow-accent: 0 0 20px hsl(330 100% 50% / 0.5);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-rajdhani;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: var(--glow-primary);
+  }
+  
+  .text-glow-secondary {
+    text-shadow: var(--glow-secondary);
+  }
+  
+  .text-glow-accent {
+    text-shadow: var(--glow-accent);
+  }
+
+  .box-glow {
+    box-shadow: var(--glow-primary);
+  }
+
+  .box-glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+
+  .gaming-border {
+    border: 2px solid hsl(var(--primary));
+    position: relative;
+  }
+
+  .gaming-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--gradient-primary);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+  }
+
+  .gaming-border:hover::before {
+    opacity: 0.3;
+  }
+
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 5px hsl(var(--primary) / 0.5), 0 0 10px hsl(var(--primary) / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.8), 0 0 30px hsl(var(--primary) / 0.5);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .animate-glitch {
+    animation: glitch 0.3s infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.6s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slide-in-left 0.6s ease-out;
+  }
+}
