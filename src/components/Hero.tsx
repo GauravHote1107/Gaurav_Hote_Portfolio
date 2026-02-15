@@ -19,7 +19,7 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-slide-in-left">
           <div className="inline-block">
             <div className="text-sm font-orbitron tracking-widest text-primary mb-4 animate-pulse-glow">
-              [ SYSTEM ONLINE ]
+              {/* [ SYSTEM ONLINE ] */}
             </div>
           </div>
 
@@ -45,7 +45,7 @@ export const Hero = () => {
             <Button
               size="lg"
               className="gaming-border bg-accent hover:bg-accent/90 text-accent-foreground font-orbitron font-bold group"
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://drive.google.com/drive/folders/17Y2HbLHoe2mDo-uhOkxY7NQAIPGFMAmL?usp=drive_link', '_blank')}
             >
               <FileText className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
               RESUME
@@ -72,7 +72,7 @@ export const Hero = () => {
 
           <div className="flex gap-6 justify-center pt-8">
             <a
-              href="https://github.com/"
+              href="https://github.com/GauravHote1107"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg bg-card hover:bg-primary/20 transition-all hover:scale-110 hover:shadow-[0_0_20px_rgba(0,217,255,0.5)]"

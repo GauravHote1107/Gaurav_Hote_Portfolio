@@ -58,7 +58,7 @@ export const Contact = () => {
               <h4 className="text-lg font-orbitron font-bold mb-4">Connect Online</h4>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/GauravHote1107"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-lg bg-card hover:bg-primary/20 transition-all hover:scale-110 box-glow"
@@ -74,7 +74,7 @@ export const Contact = () => {
                   <Linkedin className="h-6 w-6 text-secondary" />
                 </a>
                 <a
-                  href="#"
+                  href="https://drive.google.com/drive/folders/17Y2HbLHoe2mDo-uhOkxY7NQAIPGFMAmL?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-lg bg-card hover:bg-primary/20 transition-all hover:scale-110"

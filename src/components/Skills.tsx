@@ -20,8 +20,8 @@ const skillCategories = [
     color: 'secondary',
     skills: [
       { name: 'React.js', level: 80 },
-      { name: 'Node.js', level: 70 },
-      { name: 'Flask', level: 60 },
+      { name: 'Node.js', level: 60 },
+      { name: 'Flask', level: 50 },
       { name: 'Pandas', level: 60 },
       { name: 'OpenCV', level: 50 },
     ],

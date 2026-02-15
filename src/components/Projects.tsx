@@ -12,7 +12,7 @@ const projects = [
       'Build a chatbot where  doctors can query entire patient history and interact with stored patient data.',
     ],
     gradient: 'from-primary to-secondary',
-    github: '', // 🔗 Added GitHub link
+    github: 'https://github.com/GauravHote1107/MediConnect_AIML-Project', 
   },
   {
     title: 'Cost-Effective Scaling of Machine Learning Model using Serverless architecture',
@@ -37,7 +37,7 @@ const projects = [
       'Added visualizations including word clouds and sentiment distribution charts to enhance user insights.',
     ],
     gradient: 'from-accent to-primary',
-    github: '', // 🔗 Added GitHub link
+    github: 'https://github.com/GauravHote1107/WT_CP_G12', 
   },
 ];
 
