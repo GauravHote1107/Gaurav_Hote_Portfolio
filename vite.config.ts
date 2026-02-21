@@ -7,8 +7,10 @@ export default defineConfig({
   base: "/Gaurav_Hote_Portfolio/",
   server: {
     open: true,
-    host: "::",
     port: 8080,
+    strictPort: true,
+    host: true,
+    origin: "http://0.0.0.0:8080",
   },
   plugins: [react()],
   resolve: {
@@ -17,3 +19,4 @@ export default defineConfig({
     },
   },
 });
+
