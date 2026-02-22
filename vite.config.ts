@@ -4,9 +4,13 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/Gaurav_Hote_Portfolio/",
   server: {
-    host: "::",
+    open: true,
     port: 8080,
+    strictPort: true,
+    host: true,
+    origin: "http://0.0.0.0:8080",
   },
   plugins: [react()],
   resolve: {
@@ -15,3 +19,4 @@ export default defineConfig({
     },
   },
 });
+
