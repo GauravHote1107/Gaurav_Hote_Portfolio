@@ -31,13 +31,13 @@ export const Hero = () => {
           <div className="text-xl md:text-2xl lg:text-3xl font-rajdhani font-semibold text-muted-foreground">
             <span className="text-secondary text-glow-secondary">SOFTWARE DEVELOPER</span>
             <span className="mx-4 text-primary">|</span>
-            <span className="text-accent text-glow-accent">AI INNOVATOR</span>
+            <span className="text-accent text-glow-accent">AI / ML INNOVATOR</span>
           </div>
 
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-            Full-stack developer crafting next-gen solutions with React, Node.js & AI.
+            Passionate Full-Stack Developer and AI/ML Enthusiast creating intelligent, scalable, next-generation applications with React, Node.js, and AI technologies.
             <br />
-            <span className="text-primary font-semibold">200+ LeetCode problems solved</span> •
+            <span className="text-primary font-semibold">210+ LeetCode problems solved</span> •
             <span className="text-secondary font-semibold"> National Level Project Competition</span>
           </p>
 
