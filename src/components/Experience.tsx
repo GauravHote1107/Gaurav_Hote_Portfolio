@@ -8,10 +8,10 @@ const experiences = [
     location: 'Pune, Maharashtra',
     achievements: [
       'Developed and integrated REST APIs with JWT authentication',
-      'Built responsive, secure user interfaces with React + Next.js',
+      'Built responsive, secure user interfaces with React, Next.js',
       'Optimized database queries improving performance by 20%',
       'UI / UX improvements enhancing user experience',
-      'Collaborated with team to streamline workflows',
+      'Understanding Business workflows, collaborating with multi-disciplinary teams'
     ],
     type: 'work',
   },
