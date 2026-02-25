@@ -7,22 +7,22 @@ const skillCategories = [
     color: 'primary',
     skills: [
       { name: 'Java', level: 80 },
-      
-      { name: 'Python', level: 50 },
+      { name: 'Python', level: 70 },
       { name: 'JavaScript', level: 40 },
-      // { name: 'C/C++', level: 80 },
       { name: 'SQL', level: 70 },
+      { name: 'MongoDB', level: 60 },
     ],
   },
   {
     icon: Database,
-    title: 'Frameworks',
+    title: 'Frameworks/libraries',
     color: 'secondary',
     skills: [
       { name: 'React.js', level: 80 },
       { name: 'Node.js', level: 60 },
-      { name: 'Flask', level: 50 },
+      { name: 'Flask', level: 60 },
       { name: 'Pandas', level: 60 },
+       { name: 'NumPy', level: 50 },
       { name: 'OpenCV', level: 50 },
     ],
   },
@@ -33,9 +33,11 @@ const skillCategories = [
     skills: [
       
       { name: 'Git/GitHub', level: 80 },
-      { name: 'VS Code', level: 90 },
       { name: 'Postman', level: 80 },
-      { name: 'AWS EC2', level: 60 },
+      { name: 'AWS', level: 60 },
+      { name: 'GCP', level: 50 },
+      { name: 'VS Code', level: 90 },
+      { name: 'IntelliJ IDEA', level: 80 },
       // { name: 'Vercel', level: 90 },
     ],
   },
@@ -48,7 +50,7 @@ const skillCategories = [
       { name: 'DBMS', level: 80 },
       // { name: 'Agile', level: 85 },
       { name: 'REST APIs', level: 70 },
-      { name: 'CI/CD', level: 80 },
+      { name: 'CI/CD', level: 70 },
       
       // { name: 'Testing', level: 85 },
     ],
