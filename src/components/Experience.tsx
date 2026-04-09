@@ -1,6 +1,15 @@
 import { Briefcase, Award } from 'lucide-react';
 
 const experiences = [
+    {
+    role: ' Trainee Software Engineer',
+    company: 'Cognitus an IBM Company',
+    period: 'Mar 2026 - Present',
+    location: 'Mumbai, Maharashtra',
+    achievements: [
+    ],
+    type: 'work',
+  },
   {
     role: 'Software Intern',
     company: 'bizAmica Software Pvt. Ltd.',
