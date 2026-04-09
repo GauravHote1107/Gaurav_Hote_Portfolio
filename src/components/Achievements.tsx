@@ -2,6 +2,7 @@ import { Trophy, Medal, Award, Star } from 'lucide-react';
 import IETE_NationalLevelProjectCompetition from '../assets/IETE_NationalLevelProjectCompetition.jpg';
 import SCIT_Graffiti2024_Winner from '../assets/SCIT_Graffiti2024_Winner.jpg';
 import SAFEHER_ResearchPaper_Published from '../assets/SAFEHER_ResearchPaper_Published.png';
+import FFE_Scholarship_Awardee from '../assets/FFE_Scholarship_Awardee.png';
 
 const achievements = [
   
@@ -25,25 +26,29 @@ const achievements = [
 
   {
     icon: Trophy,
-    title: 'LeetCode',
-    description: '200+ problems solved',
-    // stat: 'Max Rating: ',
-    color: 'primary',
-  },
-  
-
-
-  {
-    icon: Trophy,
     title: 'Research Papers Published',
     description: '4 Research Papers Published (IEEE and Springer)',
     stat: 'Published Works',
     color: 'secondary',
     image: SAFEHER_ResearchPaper_Published,
+  },  
+
+  {
+    icon: Trophy,
+    title: 'Foundation For Excellence (FFE) Scholarship Awardee',
+    description: 'STAR MENTEE FY 2024-25',
+    stat: 'FLY - Scholar',
+    color: 'primary',
+    image: FFE_Scholarship_Awardee,
   },
 
-
-  
+  {
+    icon: Trophy,
+    title: 'LeetCode',
+    description: '200+ problems solved',
+    // stat: 'Max Rating: ',
+    color: 'primary',
+  },
 ];
 
 export const Achievements = () => {

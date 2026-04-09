@@ -35,10 +35,11 @@ export const Hero = () => {
           </div>
 
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto leading-relaxed">
-            Passionate Full-Stack Developer and AI/ML Enthusiast creating intelligent, scalable, next-generation applications with React, Node.js, and AI technologies.
+            Passionate Full-Stack Developer and AI/ML Enthusiast creating intelligent, scalable, next-generation applications.
             <br />
             <span className="text-primary font-semibold">210+ LeetCode problems solved</span> •
-            <span className="text-secondary font-semibold"> National Level Project Competition</span>
+            <span className="text-secondary font-semibold"> National Level Project Competition</span> <br/>
+            <span className="text-accent text-glow-accent font-bold">🎓 IT Department Student at VIT Pune</span>
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center items-center pt-8">
